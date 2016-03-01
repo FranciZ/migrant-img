@@ -13,8 +13,6 @@ app.use('/images', express.static('./images'));
 
 app.get('/:user/status/:id', function(req, res){
 
-
-
     var twitterUser = req.params.user;
     var twitId = req.params.id;
     var oldWord;
@@ -38,9 +36,10 @@ app.get('/:user/status/:id', function(req, res){
 
     var steps = 0;
 
+    console.log(cmd);
+
     exec(cmd, function(error, stdout, stderr) {
 
-        console.log(stdout);
 
         steps++;
         if(steps === 2){
@@ -51,7 +50,6 @@ app.get('/:user/status/:id', function(req, res){
 
     exec(cmd2, function(error, stdout, stderr) {
 
-        console.log(stdout);
         steps++;
         if(steps === 2){
             complete();

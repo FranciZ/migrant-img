@@ -14,6 +14,9 @@ var to = system.args[4];
 
 console.log(handle, id, from, to);
 
+var baseUrl = 'http://migrant.je.djnd.si/';
+baseUrl = 'http://localhost:3062/';
+
 page.open('https://twitter.com/'+handle+'/status/'+id, function (status) {
     if (status !== 'success') {
         console.log('Unable to load the address!');
