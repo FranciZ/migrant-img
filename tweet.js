@@ -18,7 +18,7 @@ toUtf = unescape(encodeURIComponent(to));
 console.log(handle, id, from, to);
 
 var baseUrl = 'http://migrant.je.djnd.si/';
-baseUrl = 'http://localhost:3062/';
+//baseUrl = 'http://localhost:3062/';
 
 var settings = {
     encoding: "utf8"
