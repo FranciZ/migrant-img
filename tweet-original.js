@@ -33,7 +33,7 @@ page.open('https://twitter.com/'+handle+'/status/'+id, function (status) {
                 top:    clipRect.top+5,
                 left:   clipRect.left,
                 width:  clipRect.width,
-                height: clipRect.height+5
+                height: clipRect.height-5
             };
 
             page.render('images/'+id+'-original.png');
