@@ -32,6 +32,7 @@ page.open(baseUrl+handle+'/status/'+id+'?from='+fromUtf+'&to='+toUtf, function (
             page.viewportSize = { width: 1440, height: 900 };
 
             var clipRect = page.evaluate(function(){
+                document.querySelector('#swapped-word').style['font-weight'] = 500;
                 return document.querySelector('.permalink-tweet').getBoundingClientRect();
             });
 
