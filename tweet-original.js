@@ -30,10 +30,10 @@ page.open('https://twitter.com/'+handle+'/status/'+id, function (status) {
             });
 
             page.clipRect = {
-                top:    clipRect.top,
+                top:    clipRect.top+5,
                 left:   clipRect.left,
                 width:  clipRect.width,
-                height: clipRect.height
+                height: clipRect.height+5
             };
 
             page.render('images/'+id+'-original.png');
